@@ -1,0 +1,185 @@
+.splash{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    display :flex;
+    align-items: center;
+    justify-content: center;
+}
+.ride_outer{
+    overflow: hidden;
+}
+.map_container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.map{
+  width: 100%;
+  height: 490px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px rgba(154, 154, 154, 0.4);
+}
+.distance {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.extra_work{
+  width: 100%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  z-index: 10000;
+  margin-bottom: 5px;
+}
+.search_container{
+  position: relative;
+  width: 50%;
+   /* background-color: red; */
+   text-align: center;
+   margin-top: 20px;
+}
+.search_container input{
+  width: 70%;
+  padding: 12px 25px;
+  box-sizing: border-box;
+  outline: none;
+  border: 1px solid rgb(188, 187, 187);
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-radius: 30px;
+}
+.search_container .ride_search{
+  width: 70%;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  box-sizing: border-box;
+  color: white;
+  background-color: var(--colour);
+}
+.search_container button{
+  position: relative;
+}
+.search_icon{
+  position: absolute;
+  right: 40px;
+  top: 3px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color:white;
+  cursor: pointer;
+  /* color: white; */
+}
+.distance_div{
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.distance_div i{
+  font-size: 26px;
+}
+.kilometers{
+  width: 150px;
+  padding: 5px 10px ;
+  text-align: center;
+  border-bottom: 3px dashed black;
+  font-weight: bold;
+  font-size: 22px;
+}
+.ride_logo img{
+  width: 160px;
+  height: 110px;
+}
+.left_arrow i{
+  position: absolute;
+  left: 20px;
+  top: 46px;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+.clear_btn{
+  border: none;
+  outline: none;
+  background-color: rgba(183, 183, 183, 0.726);
+  padding: 9px 11px 8px 11px;
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: -20px;
+}
+.clear_btn i{
+  font-size: 18px;
+  font-weight: bold;
+}
+/* suggestions box style */
+.suggestions{
+  position: absolute;
+  left: 100px;
+  top: 45px;
+  width: 70%;
+  max-height: 200px;
+  overflow-y: scroll;
+  background-color:white;
+  border: 2px solid black;
+  border-radius: 5px;
+  z-index: 2;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.suggestion_inner{
+  text-align: start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border-bottom: 2px solid black;
+}
+.suggestion_inner i{
+  font-size: 18px;
+  color: gray;
+}
+.suggestion_inner p{
+  font-size: 13px;
+  cursor: pointer;
+}
+.to_suggestions{
+  position: absolute;
+
+  top: 100px;
+}
+.suggestion_inner p {
+  white-space: nowrap;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 450px;
+}
+.loading_map{
+  height: 280px;
+  padding-top: 200px;
+}
+.custom-marker {
+  text-shadow: 5px 5px 10px rgb(133, 125, 125);
+}
+
+
+
+
+

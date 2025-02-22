@@ -1,0 +1,183 @@
+.login_form{
+    width: 33%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.288);
+    border-radius: 15px;
+}
+.login {
+    text-align: center;
+    margin: 0 auto;
+}
+.login input{
+    width: 60%;
+    margin-top: 15px;
+}
+.login .otp{
+    width: 18%;
+}
+.login .submit{
+    width: 68%;
+    margin-bottom: -10px;
+}
+#active{
+    background-color: #f4ba0d;
+}
+.img_carousel{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.img_carousel img{
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    /* object-fit: cover; */
+}
+.login_cont{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -50px;
+}
+.login_cont h1{
+    padding-top: 30px;
+    text-align: start;
+    position: relative;
+    left: 16%;
+    margin-bottom: 3px;
+}
+.login_cont h4{
+    color: #343434;
+    text-align: start;
+    position: relative;
+    left: 16%;
+    margin-top: 5px;
+}
+.login_cont .dont{
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+.dont a{
+    text-decoration: none;
+    font-size: 14px;
+    /* color: black; */
+    font-weight: bold;
+}
+.register{
+    margin-top: 100px;
+}
+.radio {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 25px;
+    margin-left: 10px;
+
+}
+.radio input {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #333;
+  cursor: pointer;
+}
+.radio span {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: -10px;
+}
+/* register */
+.register{
+    width: 40%;
+    margin-top: 80px;
+    /* background-color: red; */
+}
+.register_cont h1{
+  font-size: 25px;
+  font-weight: 800;
+  padding-right: 50px;
+  position: relative;
+  left: 17%;
+}
+.register_cont img{
+  width: 100%;
+  height: 300px;
+}
+.register .radio input{
+  position: relative;
+  left: 20%;
+}
+.register .radio span{
+  position: relative;
+  left:19%;
+}
+
+
+@media (max-width: 1024px) {
+    .register {
+        width: 50%;
+        margin-top: 60px;
+    }
+    .register_cont h1 {
+        font-size: 22px;
+        left: 10%;
+    }
+    .register_cont img {
+        height: 250px;
+    }
+    .register .radio input,
+    .register .radio span {
+        left: 15%;
+    }
+}
+
+@media (max-width: 768px) {
+    .register {
+        width: 60%;
+        margin-top: 50px;
+    }
+    .register_cont h1 {
+        font-size: 20px;
+        left: 8%;
+    }
+    .register_cont img {
+        height: 220px;
+    }
+    .register .radio input,
+    .register .radio span {
+        left: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .register {
+        width: 80%;
+        margin-top: 40px;
+    }
+    .register_cont h1 {
+        font-size: 18px;
+        left: 0;
+        text-align: center;
+    }
+    .register_cont img {
+        height: 180px;
+    }
+    .register .radio input,
+    .register .radio span {
+        left: 0;
+    }
+}
+
+#error{
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: red;
+    text-align: start;
+    position: relative;
+    left: 18%;
+}

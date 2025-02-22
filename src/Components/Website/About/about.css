@@ -1,0 +1,171 @@
+.about{
+    width: 96.7%;
+    height:auto;
+    background:none;
+    margin-top: 0px;
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    margin-bottom: 0px;
+    /* background-color: blue; */
+}
+.about-content{
+    width: 33%;
+    margin-top: -100px;
+}
+.about-content h1{
+    font-size: 50px;
+    font-weight: 300;
+}
+.about-content .black{
+    font-weight: 700;
+}
+.about-content h2{
+    font-size: 20px;
+    color: #4b4b4b;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+.about-content h1::after{
+    content: "";
+    background:none;
+}
+.about::before{
+    content: "";
+    background: none;
+}
+.about-content p{
+    font-size: 20px;
+    color: #4b4b4b;
+    margin-top: 4px;
+    line-height: 30px;
+}
+.about_image{
+    margin-top: 30px;
+    /* background-color: red; */
+}
+.about_image .div1 img{
+    width: 185px;
+    height: 250px;
+}
+.about_image .div4 img{
+    width: 280px;
+    height: 430px;
+    position: relative;
+    top: -230px;
+    left: 100px;
+}
+.about_image #div2{
+    background-color: white;
+    position: relative;
+    top: -50px;
+    left: -60px;
+    z-index: -1;
+}
+.about::after{
+    content: "";
+    height: 482px;
+    width: 835px;
+    border-radius: 251px;
+    background-color: #f8efbc;
+    transform: rotate(-160deg);
+    position: absolute;
+    top: 130px;
+    left: 680px;
+    z-index: -2;
+    opacity: 0.5;
+}
+
+.champions {
+    width: 95%;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    gap: 60px; 
+    padding: 20px;
+    margin-top: -130px;
+    position: relative;
+}
+.champions::before{
+    content: "";
+    height: 482px;
+    width: 635px;
+    border-radius: 251px;
+    transform: rotate(-160deg);
+    background-color: #f8efbc;
+    position: absolute;
+    opacity: 0.5;
+    top: -150px;
+    z-index: -1;
+    left: -300px;
+}
+.champ_content{
+    width: 40%;
+}
+
+.champ_content h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    line-height: 60px;
+    position: relative;
+}
+.champ_content h1::after{
+    content: "";
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 53px;
+    left: 0px;
+    background-color: #f9c935;
+}
+.champ_content p{
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 30px;
+    margin: 10px 0px;
+}
+.champ_img{
+    width: 40%;
+}
+.champ_img img{
+    width: 100%;
+    height: 190px;
+}
+.work{
+    width: 100%;
+    margin-top: 150px;
+    margin-bottom: -150px;
+    text-align: center;
+    height: 500px;
+    padding: 90px 0px;
+    background: #f9c935 url(../../../../public/assets/Jobs-@-Rapido.webp);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.work h1{
+    font-size: 50px;
+    color: white;
+    font-weight: 300;
+    line-height: 60px;
+    margin-top: 70px;
+}
+.work p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    margin: 20px 0px;
+}
+.work button{
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px 50px;
+    color: white;
+    outline: none;
+    border: none;
+    background-color: black;
+    border-radius: 30px 30px 30px 5px;
+    cursor: pointer;
+}

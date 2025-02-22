@@ -1,0 +1,68 @@
+.safety_container{
+    text-align: center;
+}
+.overview{
+    width: 100%;
+    height: 55px;
+    background-color: #fbfbfb;
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.overview ul{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin-left: 230px;
+}
+.overview ul>li a {
+    text-decoration: none;
+    color: #333333;
+    font-size: 17px;
+    cursor: pointer;
+}
+.overview ul>li a.active{
+    font-weight: bold;
+    font-size: 18px;
+}
+.overview ul>li a:hover{
+    color: black;
+    font-size: 18px;
+}
+.safety2 img{
+    width: 62%;
+    margin-top: 0px;
+}
+.safety_all{
+    padding-top: 140px;
+}
+#covers_img{
+    width: 65%;
+}
+.covers{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    /* background-color: blue; */
+}
+.covers img{
+    width: 50%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+/* customer css */
+.s_customer{
+    width: 100%;
+    text-align: center;
+    padding-top: 130px;
+}
+.s_customer img{
+    width: 55%;
+}
+.s_captain{
+    margin-bottom: 100px;
+}
