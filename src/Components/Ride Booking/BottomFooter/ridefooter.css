@@ -25,3 +25,19 @@
     font-weight: bold;
     /* color: red; */
 }
+@media (max-width: 1000px) {
+    .ride_footer div{
+        width: 13%;
+    }
+}
+@media (max-width: 600px) {
+    .ride_footer div{
+        width: 16%;
+    }
+    .ride_footer div i{
+        font-size: 17px;
+    }
+    .ride_footer div p{
+        font-size: 11px;
+    }
+}

@@ -97,7 +97,6 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    /* background-color: red; */
 }
 #straight_customer{
     width: 26%;
@@ -142,3 +141,103 @@
 .dot.active {
   background-color:#fabd04;
 }
+
+@media(max-width:1000px){
+    .straight{
+        margin-top: 0px;
+    }
+    .straight h1{
+        font-size: 26px;
+        margin-top: -30px;
+    }
+    .straight h1::after{
+        display: none;
+    }
+    .straight::before{
+        width: 94%;
+        height: 960px;
+        top: 70px;
+    }
+   .straight_captain{
+    height: auto;
+    gap: 10px;
+    width: auto;
+    margin-top: 50px;
+   }
+   .left{
+    position: relative;
+    left: 50px;
+   }
+   .right{
+    position: relative;
+    left: -50px;
+   }
+   .review{
+    width: 500px;
+    gap: 10px;
+   } 
+   .review img{
+    top: 40px;
+    left: 0px;
+
+   }
+   .carouselOwn{
+    height: auto; 
+   }
+   .dots{
+    margin-top: 20px;
+    margin-bottom: 100px;
+   }
+   .dots_img2{
+    display: none;
+   }
+   .responsive{
+    margin-top: 20px;
+    margin-bottom: 100px;
+   }
+}
+@media(max-width:600px){
+    .straight{
+        margin-top: 0px;
+    }
+    .straight h1{
+        font-size: 26px;
+        margin-top: 0px;
+    }
+    
+    .straight::before{
+        width: 94%;
+        height: 960px;
+        top: 80px;
+    }
+   .straight_captain{
+    height: auto;
+    gap: 0px;
+    margin-top: 20px;
+   }
+   .left{
+    position: relative;
+    left: 9px;
+   }
+   .right{
+    position: relative;
+    left: -5px;
+   }
+   .review{
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+   } 
+   .review img{
+    top: 0px;
+    left: 0px;
+    margin: 0 auto;
+   }
+}
+
+
+
+
+
+
+

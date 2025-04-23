@@ -132,3 +132,89 @@
     border: 1px solid black;
     border-radius: 5px;
 }
+
+
+@media (max-width:1500px){
+    .captain_search{
+        width: 100%;
+    }
+    .rapido_add {
+        width: 40%;
+    }
+    .captain_details{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .captain_search {
+      flex-direction: column;
+      padding: 20px 40px;
+      gap: 30px;
+    }
+    .rapido_add,
+    .captain_details {
+      width: 65%;
+      height: auto;
+    }
+    .rapido_add img {
+      height: auto;
+      display: none;
+    }
+    .captain_profile {
+      flex-direction: column;
+    }
+    .captain_profile img {
+      width: 150px;
+      height: 150px;
+    }
+    .captain_profile .main {
+      width: 90%;
+      padding: 20px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .captain_search {
+      padding: 20px;
+    }
+    .captain_details {
+      width: 90%;
+      padding: 30px 20px;
+    }
+    .captain_details h2 {
+      font-size: 22px;
+    }
+    .captain_profile .main {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    .captain_arrival p {
+      font-size: 18px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .captain_details {
+      width: 90%;
+      padding: 20px 15px;
+    }
+    .captain_details h2 {
+      font-size: 20px;
+      margin-top: 30px;
+    }
+    .captain_profile img {
+      width: 120px;
+      height: 120px;
+    }
+    .captain_profile .main {
+      padding: 15px;
+      font-size: 13px;
+    }
+    .captain_arrival p {
+      font-size: 16px;
+      text-align: center;
+    }
+    .time_display {
+      font-size: 14px;
+      padding: 5px 8px;
+    }
+  }
+  

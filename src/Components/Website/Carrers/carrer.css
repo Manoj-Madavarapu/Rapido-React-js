@@ -1,3 +1,28 @@
 .slide::before{
     height: 520px;
 }
+
+
+@media (max-width: 1000px) {
+.carrer_content {
+    width: 100% !important;
+}
+.carrer_content p{
+    line-height: 24px;
+}
+.carrer_content button{
+    margin-top: 10px;
+}
+.carrer:after{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 298px !important;
+}
+.slide::before{
+    width: 99%;
+    top: 120px;
+}
+.h1_media{
+    margin-bottom: 10px!important;
+}
+}

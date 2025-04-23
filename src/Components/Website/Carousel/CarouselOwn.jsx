@@ -80,7 +80,7 @@ let CarouselOwn = () => {
         </>
         :(
         <>
-        <div className="straight_captain">
+        <div className="straight_captain responsive">
             <div className="review">
                 <img src="https://content.rapido.bike/uploads/test/originals/49e699db-bdfb-4978-97bb-46533d982a1b.png" alt="" />
                 <div className="review_cont">

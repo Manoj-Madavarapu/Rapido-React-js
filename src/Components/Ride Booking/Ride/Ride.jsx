@@ -25,8 +25,8 @@ let fetchCoordinates = async (address, setPosition) => {
   }
   try{
   let response = await fetch(
-    `https://nominatim.openstreetmap.org/search?format=json&q=${address}`
-    // `https://nominatim.openstreetmap.org/search?format=json&q=${address}&countrycodes=IN`
+    // `https://nominatim.openstreetmap.org/search?format=json&q=${address}`
+    `https://nominatim.openstreetmap.org/search?format=json&q=${address}&countrycodes=IN`
   );
   let data = await response.json();
   if (data.length > 0) {
@@ -204,9 +204,10 @@ useEffect(() => {
       <div className="extra_work">
       <div className="logo ride_logo" onClick={()=>window.location.reload()}>
           {(from && to) && <div className="left_arrow"><i className="fa-solid fa-left-long" onClick={()=>window.location.reload()}></i></div>}
-          <img src="https://logowik.com/content/uploads/images/rapido-bike-taxi8263.jpg" alt=""/>
+          <img src="https://logowik.com/content/uploads/images/rapido-bike-taxi8263.jpg" alt="" className="remove_image"/>
       </div>
       <div className="search_container">
+        <div className="for_responsive">
         <input type="text" placeholder="Enter From Address" value={fromAddress} onChange={(e) =>{setFromAddress(e.target.value);setSearch(e.target.value);}}
           onKeyDown={(e)=>{
             if(e.key==="Enter"){
@@ -215,6 +216,7 @@ useEffect(() => {
             }}}/>
         <button onClick={()=>fetchCoordinates(fromAddress, setFrom)} className="search_icon"><i className="fa-solid fa-magnifying-glass"></i></button>
         {from && <button onClick={()=>setFromAddress("")} className="clear_btn"><i className="fa-solid fa-xmark"></i></button>}
+        </div>
         {(fromAddress && fromSugesstions.length>0) &&
         <div className="suggestions">
           {fromSugesstions.map(x=>(
@@ -228,6 +230,7 @@ useEffect(() => {
           </div>
           ))}
           </div>}
+      <div className="for_responsive">
         <input type="text" placeholder="Enter To Address" value={toAddress}
           onChange={(e) =>{ setToAddress(e.target.value);setSearch(e.target.value)}}
           onKeyDown={(e)=>{
@@ -237,6 +240,7 @@ useEffect(() => {
             }}}/>
         <button onClick={()=>fetchCoordinates(toAddress,setTo)}  className="search_icon"><i className="fa-solid fa-magnifying-glass"></i></button>
         {to && <button onClick={()=>setToAddress("")} className="clear_btn"><i className="fa-solid fa-xmark"></i></button>}
+      </div>
         {(toAddress && toSugesstions.length>0) &&
         <div className="suggestions to_suggestions">
           {toSugesstions.map(x=>(

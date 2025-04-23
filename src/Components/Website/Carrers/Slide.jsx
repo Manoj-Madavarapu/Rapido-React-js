@@ -41,7 +41,7 @@ let Slide = () => {
     <>
       <div className="what straight slide" style={{marginTop:"-250px"}}>
         <img src="assets/Screenshot 2025-01-23 135710.png" alt=""  className="dots_img1"/>
-        <h1 style={{marginBottom:"50px"}}>What our employees say</h1>
+        <h1 style={{marginBottom:"50px"}} className="h1_media">What our employees say</h1>
         <div className="carouselOwn">
           <button className="arrow left" onClick={handlePrev} disabled={currentIndex==0}>
             &lt;

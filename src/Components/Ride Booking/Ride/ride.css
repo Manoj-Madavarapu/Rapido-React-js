@@ -1,11 +1,3 @@
-.splash{
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    display :flex;
-    align-items: center;
-    justify-content: center;
-}
 .ride_outer{
     overflow: hidden;
 }
@@ -180,6 +172,99 @@
 }
 
 
+@media (max-width: 1024px) {
+  .extra_work {
+    gap: 20px;
+    padding-left: 50px;
+  }
+  .search_container {
+    width: 60%;
+    /* background-color: red; */
+  }
+  .remove_image{
+    display: none !important;
+  }
+  .for_responsive{
+    display: flex;
+    margin-right: 15px;
+  }
+  .search_container input,
+  .search_container .ride_search {
+    width: 90%;
+  }
+  .suggestions {
+    left: 0px;
+    width: 85%;
+  }
+  .map {
+    height: 480px;
+  }
+  .distance_div{
+    padding: 0px ;
+    margin-right: 5px;
+  }
+  .kilometers {
+    width: 110px;
+    font-size: 20px;
+  }
+  .clear_btn{
+    width: 37px;
+    height: 37px;
+    padding: 9px 7px;
+    font-size: 16px; 
+    margin-top: 4px;
+  }
+  .left_arrow i {
+    font-size: 16px;
+  }
+}
 
-
-
+@media (max-width: 600px) {
+  .extra_work {
+    margin-top: -20px;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 50px;
+  }
+  .remove_image{
+    display: none !important;
+  }
+  .search_container {
+    width: 80%;
+    /* background-color: red; */
+  }
+  .search_container input,
+  .search_container .ride_search {
+    width: 95%;
+  }
+  .search_icon {
+    top: -3px;
+    font-size: 16px;
+  }
+  .clear_btn{
+    width: 35px;
+    height: 35px;
+    padding: 9px 7px;
+    font-size: 16px; 
+    margin-top: 4px;
+  }
+  .suggestions {
+    left: 0px;
+    width: 90%;
+  }
+  .map {
+    height: 440px;
+  }
+  .left_arrow i {
+    top: 30px;
+    font-size: 14px;
+  }
+  .kilometers {
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  .distance_div{
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+}

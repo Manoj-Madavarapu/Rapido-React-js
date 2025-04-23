@@ -117,60 +117,7 @@
 }
 
 
-@media (max-width: 1024px) {
-    .register {
-        width: 50%;
-        margin-top: 60px;
-    }
-    .register_cont h1 {
-        font-size: 22px;
-        left: 10%;
-    }
-    .register_cont img {
-        height: 250px;
-    }
-    .register .radio input,
-    .register .radio span {
-        left: 15%;
-    }
-}
 
-@media (max-width: 768px) {
-    .register {
-        width: 60%;
-        margin-top: 50px;
-    }
-    .register_cont h1 {
-        font-size: 20px;
-        left: 8%;
-    }
-    .register_cont img {
-        height: 220px;
-    }
-    .register .radio input,
-    .register .radio span {
-        left: 10%;
-    }
-}
-
-@media (max-width: 480px) {
-    .register {
-        width: 80%;
-        margin-top: 40px;
-    }
-    .register_cont h1 {
-        font-size: 18px;
-        left: 0;
-        text-align: center;
-    }
-    .register_cont img {
-        height: 180px;
-    }
-    .register .radio input,
-    .register .radio span {
-        left: 0;
-    }
-}
 
 #error{
     font-size: 12px;
@@ -180,4 +127,108 @@
     text-align: start;
     position: relative;
     left: 18%;
+}
+
+
+
+
+@media (max-width: 1024px) {
+    .login_form, .register {
+        width: 60%;
+    }
+    .register_cont h1 {
+        font-size: 22px;
+        padding-left: 10%;
+    }
+    .register_cont img {
+        height: 250px;
+    }
+    .radio {
+        padding-left: 15%;
+    }
+    .register_cont h1 {
+        font-size: 20px;
+        margin-top: 0px;
+        padding-left: 0%;
+        /* left: 13%; */
+    }
+    .register .radio input{
+        position: relative;
+        left: 5%;
+    }   
+    .register .radio span{
+        left:4%;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+    .login_form, .register {
+        width: 80%;
+        /* height: auto; */
+    }
+    .register{
+        margin-top: 70px;
+    }
+    .register input{
+        height: 13px;
+    }
+    .register input::placeholder{
+        font-size: 13px;
+    }
+    .register_cont h1 {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: -2px;
+        padding-left: 0%;
+        left: 13%;
+    }
+    .register_cont img {
+        height: 200px;
+    }
+    .radio {
+        padding-left: 10%;
+    }
+    .img_carousel{
+        height: 250px;
+    }
+    .img_carousel img{
+        height: 250px;
+    }
+    .login_cont h1{
+        padding-top: 0px;
+    }
+    .register .radio input{
+        position: relative;
+        left: 6%;
+    }   
+    .register .radio span{
+        left: 3.5%;
+    }
+}
+
+/* Small Devices */
+@media (max-width: 480px) {
+    .login_form, .register {
+        width: 90%;
+    }
+    .login input, .login .submit, .login .otp {
+        width: 90%;
+    }
+    .register_cont h1 {
+        font-size: 18px;
+        text-align: center;
+        padding-left: 0;
+    }
+    .register_cont img {
+        height: 180px;
+    }
+    .radio {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 5%;
+    }
+    #error {
+        padding-left: 5%;
+    }
 }

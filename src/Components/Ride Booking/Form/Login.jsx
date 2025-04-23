@@ -35,10 +35,10 @@ let Login=()=>{
         if("go" && phone.length!==10 || !/^[6-9]\d{9}$/.test(phone)){
           return alert("Invalid Phone Number");
       }
-      else if(!storedName){
-        return alert("Details not found");
+      else if(!storedPhone){
+        return alert("Details not found please register first");
       }
-      else if(name.toLocaleLowerCase().trim() != storedName.toLocaleLowerCase().trim() || phone!=storedPhone){
+      else if(phone!=storedPhone){
         return alert("Invalid Credentials");
       }
       else if(!otp.trim()){
@@ -56,10 +56,12 @@ let Login=()=>{
   function generateOtp(){
     let x=Math.floor((Math.random()*9000)+1000);
     setgeneratedOtp(x);
-    alert("Otp has sent");
+    alert(`Otp has sent
+Note: This is a demo OTP and will not be sent to your phone`);
     setTimeout(()=>{
       console.log(x);
-      alert(`Your OTP is : ${x}`);
+      alert(`Your OTP is : ${x}
+Note: Remember this OTP for login or check in console`);
     },1000);
   }
     return(

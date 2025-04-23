@@ -25,11 +25,11 @@ let Customer=()=>{
             </ul>
         </div>       
         <div className="s_customer">
-            <img src="/assets/Safety/customer-safety.png" alt="" />
+            <img src="/assets/Safety/customer-safety.png" alt="" className="safety_allC"/>
             <a href="https://www.rapido.bike/know-your-rapido-captain.pdf" target="_blanck"><img src="/assets/Safety/captain-verification.png" alt="" style={{cursor:"pointer"}}/></a>
             <img src="/assets/Safety/safety-features-customer.png" alt="" />
             <img src="/assets/Safety/safety_way_forward_overview.png" alt="" onClick={getMore} style={{marginBottom:"50px",cursor:"pointer"}}/>
-            {more && <img src="/assets/Safety/wayforward-expanded.png" alt="" style={{width:"60%",marginBottom:"100px",marginTop:"-100px"}}/>}
+            {more && <img src="/assets/Safety/wayforward-expanded.png" alt="" className="click_Change" style={{width:"60%",marginBottom:"100px",marginTop:"-100px"}}/>}
         </div>
         <Footer/>
         </>

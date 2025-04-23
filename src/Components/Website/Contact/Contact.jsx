@@ -59,7 +59,7 @@ let Contact=()=>{
                <button onClick={validate}>Submit</button>
             </div>
             <div className="address">
-                 <img src="/assets/Screenshot 2025-02-03 025503.png" alt="" />
+                 <img src="/assets/Screenshot 2025-02-03 025503.png" alt="" className="remove_dots"/>
                  <h2>Registerd Office Address</h2>
                  <p>Roppen Transportation Services Pvt Ltd, 3rd Floor, Sai Prithvi Arcade, Megha Hills, Sri Rama Colony, Madhapur, Hyderabad - 500081.CIN:U52210TG2015PTC097115</p>
                  <h2>City Office:</h2>

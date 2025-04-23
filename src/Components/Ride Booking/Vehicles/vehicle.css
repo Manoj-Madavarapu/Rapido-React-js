@@ -20,6 +20,7 @@
     gap: 20px;
     border-right: 1px solid gray;
     cursor: pointer;
+    /* background-color: blue; */
 }
 .vehicle_container .zoom{
     width: 30%;
@@ -181,4 +182,145 @@
     cursor: not-allowed;
     font-size: 12px;
     background-color: gray;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    .vehicle_container{
+        gap: 0px;
+    }
+    .vehicles,
+    .vehicle_container .zoom {
+      width: 34%;
+      gap: 0px;
+      /* margin-left: 0px; */
+      /* margin-right: 0px; */
+      /* background-color: red; */
+    }
+    .zoom img{
+        width: 100px;
+        height: 80px;
+        /* background-color: red; */
+    }
+    .vehicles img{
+        width: 100px;
+        height: 75px;
+        padding: 0px;
+        /* background-color: red; */
+    }
+    .vehicle_content{
+        padding: 2px;
+        /* margin-right: 4px; */
+    }
+    .vehicle_content h4{
+        font-size: 16px;
+    }
+    .vehicle_content p{
+        margin-top: 1px;
+        font-size: 12px;
+    }
+    .vehicle_container .price{
+        margin: 0px 3px;
+    }
+    .coupon-section {
+      width: 25%;
+    }
+    .book-ride-btn {
+      width: 65%;
+    }
+    .ride-booking {
+      gap: 50px;
+    }
+    .coupons_list {
+      right: 10px;
+      width: 300px;
+    }
+    .coupons_list {
+        padding: 15px 20px;
+      }
+      .coupons_list h2{
+        font-size: 17px;
+        margin-bottom: 7px;
+      }
+      .active_coupon{
+        gap: 15px;
+        margin-bottom: 0px;
+        padding: 8px 10px;
+      }
+      .active_coupon_cont h4{
+        font-size: 14px;
+      }
+      .active_coupon button{
+        font-size: 13px;
+        margin-left: 0px;
+      }
+      .cashback_offer{
+        left: 15px !important;
+        width: 80% !important;
+        font-size: 14px;
+        padding: 15px 10px!important
+      }
+}
+
+@media screen and (max-width: 600px) {
+  .vehicle_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .vehicles,
+  .vehicle_container .zoom {
+    width: 80%;
+    border-right: none;
+    border-bottom: 1px solid gray;
+    padding-bottom: 10px;
+  }
+  .zoom img,
+  .vehicles img {
+    width: 120px;
+    height: 90px;
+  }
+  .ride-booking {
+    flex-direction: column;
+    height: auto;
+    gap: 0px;
+  }
+
+  .book-ride-btn,
+  .coupon-section {
+    width: 100%;
+    position: static;
+    margin: 2px 0;
+  }
+  .coupons_list {
+    width: 60%;
+    right: 30px;
+    bottom: 170px;
+    padding: 10px 15px;
+    /* margin-top: 20px; */
+    /* box-shadow: none; */
+  }
+  .coupons_list h2{
+    font-size: 16px;
+    margin-bottom: 7px;
+  }
+  .active_coupon{
+    gap: 15px;
+    margin-bottom: 0px;
+    padding: 8px 10px;
+  }
+  .active_coupon_cont h4{
+    font-size: 14px;
+  }
+  .active_coupon button{
+    font-size: 13px;
+    margin-left: 0px;
+  }
+  .cashback_offer{
+    bottom: 180px !important;
+    left: 15px !important;
+    width: 50% !important;
+    font-size: 14px;
+    padding: 15px 10px!important
+  }
 }

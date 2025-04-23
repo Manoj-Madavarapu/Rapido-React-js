@@ -66,3 +66,55 @@
 .s_captain{
     margin-bottom: 100px;
 }
+
+
+@media (max-width: 1000px) {
+    .overview ul {
+      margin: 0 auto;
+      gap: 1.4rem;
+    }
+    .overview ul > li a {
+      /* font-size: 0.4rem; */
+    }
+    .overview ul>li a:hover{
+        font-size: 16px;
+    }
+    .overview ul>li a.active{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .safety2 img,
+    .s_customer img {
+      width: 100%;
+      margin: 0 auto;
+      
+    }
+    .full{
+        width: 100% !important;
+        height: auto !important;
+    }
+    .covers {
+        flex-direction: column;
+        align-items: center;
+      }
+      .covers img {
+        width: 100%;
+      }
+    .click_Change{
+        width: 100% !important;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .covers {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .covers img {
+      width: 100%;
+    }
+    .click_Change{
+        width: 100% !important;
+    }
+  }

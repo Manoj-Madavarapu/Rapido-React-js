@@ -56,3 +56,49 @@
     background-color: rgb(189, 183, 183);
     cursor: not-allowed;
 }
+
+@media screen and (max-width: 1024px) {
+    .blog {
+      width: 40%;
+
+    }
+    .blog_heading {
+      font-size: 40px;
+      line-height: 50px;
+      margin-left: 50px;
+      padding-top: 100px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .blog {
+      width: 80%;
+    }
+    .blog_heading {
+      font-size: 32px;
+      line-height: 40px;
+      margin-left: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .blog {
+      width: 100%;
+      margin: 0 10px;
+    }
+    .blog_heading {
+      font-size: 28px;
+      line-height: 36px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
+    .pages {
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .pages button {
+      padding: 8px 12px;
+    }
+  }
+  

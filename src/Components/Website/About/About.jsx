@@ -17,11 +17,11 @@ let About=()=>{
                 <h2>What makes us different?</h2>
                 <p>Our bike taxis can dodge the traffic during peak hours and get you to the destination in a jiffy! So when you think travel, think Rapido.</p>
             </div>
-            <div className="know_image about_image">
-                <div className="div1"><img src="/assets/about_us_1.png" alt="" /></div>
+            <div className="know_image about_image" >
+                <div className="div1"><img src="/assets/about_us_1.png" alt="" id="girl_img"/></div>
                 <div id="div2"></div>
                 <div id="div3"></div>
-                <div className="div4"><img src="/assets/about_us_2.png" alt="" /></div>
+                <div className="div4"><img src="/assets/about_us_2.png" alt="" id="boy_img" /></div>
             </div>
         </div>
 

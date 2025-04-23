@@ -16,7 +16,7 @@ let Captain=()=>{
             </ul>
         </div>       
         <div className="s_customer s_captain">
-            <img src="/assets/Safety/captain-safety.png" alt="" />
+            <img src="/assets/Safety/captain-safety.png" alt="" className="full2" />
             <img src="/assets/Safety/safety_groups_overview.png" alt="" />
         </div>
         <Footer/>

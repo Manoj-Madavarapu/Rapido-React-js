@@ -188,7 +188,7 @@ let Vehicle=({distance,setIconData})=>{
         <div className="coupon-section co" onClick={handleCashback}>
            <i className="fa-solid fa-sack-dollar"></i>
             <h2>Cashbacks</h2>
-            {cashback&&<div className="coupons_list" style={{width:"290px",textAlign:"center",bottom:"60px",left:"-8px",padding:"28px 15px 35px 15px"}}>
+            {cashback&&<div className="coupons_list cashback_offer" style={{width:"290px",textAlign:"center",bottom:"60px",left:"-8px",padding:"28px 15px 35px 15px"}}>
                 <i className="fa-regular fa-face-surprise"></i>
                 <i className="fa-regular fa-face-surprise"></i>
                 <h4 style={{marginTop:"10px"}}>Sorry you don't have any cashbacks !</h4>

@@ -99,7 +99,7 @@ let Home=()=>{
         // onRequestClose={()=>setSignUp(false)}
         ariaHideApp={false}
         style={{content:{width:"28%",height:"69%",margin:"auto",marginTop:"60px",zIndex:"100",boxShadow:"0px 0px 15px rgb(0,0,0,0.5)",borderRadius:"10px",padding:"40px"},overlay:{zIndex:"100",backgroundColor:"#a49c9c3e"}}}
-        contentLabel="Example Modal">
+        contentLabel="Example Modal" className="signUpModal">
           {!submit?<>
             <div className="sign">
                 <h1>Become a Captain <span onClick={()=>setSignUp(false)}>&times;</span></h1>

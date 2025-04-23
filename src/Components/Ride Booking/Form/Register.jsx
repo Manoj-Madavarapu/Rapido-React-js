@@ -51,10 +51,12 @@ let Register=()=>{
   function generateOtp(){
     let x=Math.floor((Math.random()*9000)+1000);
     setgeneratedOtp(x);
-    alert("Otp has sent");
+    alert(`Otp has sent
+Note: This is a demo OTP and will not be sent to your phone`);
     setTimeout(()=>{
       console.log(x);
-      alert(`Your OTP is : ${x}`);
+      alert(`Your OTP is : ${x}
+Note: Remember this OTP for Registeration or check in console`);
     },1000);
   }
     return(
@@ -67,7 +69,7 @@ let Register=()=>{
                 {/* {nameError && <p style={{color:"red"}}>*This field is required</p>} */}
                 <input type="text" placeholder="Enter Your Password" onChange={(e)=>setPassword(e.target.value)} required/>
                 {/* {passwordError && <p style={{color:"red"}}>*This field is required</p>} */}
-                <p style={{textAlign:"start",position:"relative",left:"19%",fontSize:"17px",fontWeight:"bold"}}>Select Your Gender</p>
+                <p style={{textAlign:"start",position:"relative",left:"16%",fontSize:"17px",fontWeight:"bold"}}>Select Your Gender</p>
                 <div className="radio">
                   <input type="radio" name="same" value="male" onChange={(e)=>setGender(e.target.value)}/><span>Male</span>
                   <input type="radio" name="same" value="female" onChange={(e)=>setGender(e.target.value)}/><span>Female</span>

@@ -31,9 +31,9 @@ let Safety=()=>{
                 <img src="/assets/Safety/cover-customer.png" alt="" onClick={()=>navigate("/customer")}/>
                 <img src="/assets/Safety/cover-captain.png" alt="" onClick={()=>navigate("/captain")}/>
             </div>
-            <img src="/assets/Safety/safety_groups_overview.png" alt="" style={{width:"60%",height:"680px"}}/>
-            <img src="/assets/Safety/safety_way_forward_overview.png" alt="" onClick={getMore} style={{marginBottom:"50px",cursor:"pointer"}}/>
-            {more?<img src="/assets/Safety/wayforward-expanded.png" alt="" style={{width:"60%",marginBottom:"100px",marginTop:"-100px"}}/>:""}
+            <img src="/assets/Safety/safety_groups_overview.png" alt="" style={{width:"60%",height:"680px"}} className="full"/>
+            <img src="/assets/Safety/safety_way_forward_overview.png" alt="" onClick={getMore} style={{marginBottom:"50px",cursor:"pointer"}} className="click_Change"/>
+            {more?<img src="/assets/Safety/wayforward-expanded.png" alt="" style={{width:"60%",marginBottom:"100px",marginTop:"-100px"}} className="click_Change"/>:""}
         </div>
         <Footer/>
         </div>

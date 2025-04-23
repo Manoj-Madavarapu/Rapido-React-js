@@ -169,3 +169,157 @@
     border-radius: 30px 30px 30px 5px;
     cursor: pointer;
 }
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1000px) {
+    .about-content {
+        width: 90%;
+        margin-top: 100px;
+    }
+    .about-content h1 {
+        font-size: 35px;
+    }
+    .about-content h2 {
+        font-size: 18px;
+    }
+    .about-content p {
+        font-size: 16px;
+    }
+    .about::after{
+        width: 130%;
+        height: 700px;
+        /* height: 10%; */
+        top: 500px;
+        left: 0px;
+    }
+    .about_image{
+        margin: 0 auto;
+    }
+    .about_image .div1 img {
+        width: 200px;
+        height: 250px;
+        position: relative;
+        top: -50px;
+        left: -150px;
+    }
+    .about_image .div4 img {
+        position: relative;
+        top: -150px;
+        left: -10px;
+    }
+    .about_image{
+        margin-bottom: 50px;
+    }
+    .about_image #div3{
+        display: none;
+    }
+    .champions {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .champions::before{
+        top: 0px;
+        left: -200px;
+    }
+    .champ_content {
+        width: 100%;
+    }
+    .champ_content p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .work{
+        margin-top: 30px;
+    }
+    .work h1 {
+        font-size: 30px;
+    }
+    .work p {
+        font-size: 18px;
+    }
+    .work button {
+        font-size: 14px;
+        padding: 15px 40px;
+    }
+}
+
+/* For extra small devices (phones in portrait mode) */
+@media (max-width: 600px) {
+
+    .about-content {
+        width: 100%;
+        /* margin-top: 60px; */
+        padding-left: 20px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content h2 {
+        font-size: 16px;
+    }
+    .about-content p {
+        font-size: 14px;
+    }
+    .about::after{
+        width: 100%;
+        height: 285px;
+        /* height: 10%; */
+        transform: rotate(0deg);
+         top: 442px;
+         left: 5px;
+    }
+    .about_image{
+        margin-bottom: 100px;
+    }
+    .about_image .div1 img {
+        width: 200px;
+        height: 250px;
+        position: relative;
+        top: -80px;
+        left: -5px;
+        object-fit: cover;
+    }
+    .about_image .div4 img {
+        width: 200px;
+        height: 250px;
+        position: relative;
+        top: -80px;
+        left: 10px;
+    }
+
+    .champions {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .champ_content {
+        width: 100%;
+    }
+    .champ_content h1{
+        font-size: 26px;
+    }
+    .champ_content p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .champ_img {
+        width: 90%;
+    }
+    
+    .work h1 {
+        font-size: 25px;
+    }
+
+    .work p {
+        font-size: 16px;
+    }
+
+    .work button {
+        font-size: 12px;
+        padding: 12px 35px;
+    }
+}
+
