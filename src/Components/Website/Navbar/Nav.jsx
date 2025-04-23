@@ -48,7 +48,7 @@ let Nav=()=>{
                    <li><NavLink to="/press">Press</NavLink></li>
                    <li><NavLink to="/contact">Contact Us</NavLink></li>
                    <button className="download_app" onClick={()=>setPop(true)}>Download App</button>
-                   <div className="account" onMouseOver={()=>setShowAccount(true)} onClick={()=>setShowAccount(false)}><i className="fa-solid fa-user"></i>
+                   <div className="account" onDoubleClick={()=>setShowAccount(true)} onMouseOver={()=>setShowAccount(true)} onClick={()=>setShowAccount(false)}><i className="fa-solid fa-user"></i>
                    {showAccount && (
                         <div className="dropdown-menu">
                            {!logout && name ?<>
