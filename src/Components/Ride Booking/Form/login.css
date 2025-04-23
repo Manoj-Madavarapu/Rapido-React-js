@@ -69,12 +69,15 @@
 .register{
     margin-top: 100px;
 }
+.register_cont{
+    padding-left: 0px !important
+}
 .radio {
     display: flex;
     align-items: center;
     /* justify-content: center; */
     gap: 25px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
 
 }
 .radio input {
@@ -207,28 +210,4 @@
     }
 }
 
-
-/* @media (max-width: 480px) {
-    .login_form, .register {
-        width: 90%;
-    }
-    .login input, .login .submit, .login .otp {
-        width: 90%;
-    }
-    .register_cont h1 {
-        font-size: 18px;
-        text-align: center;
-        padding-left: 0;
-    }
-    .register_cont img {
-        height: 180px;
-    }
-    .radio {
-        flex-direction: column;
-        align-items: flex-start;
-        padding-left: 5%;
-    }
-    #error {
-        padding-left: 5%;
-    }
-} */
+ 
